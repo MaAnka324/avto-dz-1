@@ -63,7 +63,7 @@ function HW2() {
         // это просто функция стрелочник-она засетает, то что сделает deleteAffair
         // setAffairs(вызываю функцию(передаю аргументы))
     }
-//test
+//test22
     return (
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>
