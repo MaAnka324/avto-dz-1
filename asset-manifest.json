@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/avto-dz-1/static/css/main.a004cd9f.css",
-    "main.js": "/avto-dz-1/static/js/main.bb6f761e.js",
+    "main.css": "/avto-dz-1/static/css/main.bf3f5605.css",
+    "main.js": "/avto-dz-1/static/js/main.866c8733.js",
     "static/js/787.66cb4309.chunk.js": "/avto-dz-1/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/avto-dz-1/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/avto-dz-1/index.html",
-    "main.a004cd9f.css.map": "/avto-dz-1/static/css/main.a004cd9f.css.map",
-    "main.bb6f761e.js.map": "/avto-dz-1/static/js/main.bb6f761e.js.map",
+    "main.bf3f5605.css.map": "/avto-dz-1/static/css/main.bf3f5605.css.map",
+    "main.866c8733.js.map": "/avto-dz-1/static/js/main.866c8733.js.map",
     "787.66cb4309.chunk.js.map": "/avto-dz-1/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a004cd9f.css",
-    "static/js/main.bb6f761e.js"
+    "static/css/main.bf3f5605.css",
+    "static/js/main.866c8733.js"
   ]
 }
