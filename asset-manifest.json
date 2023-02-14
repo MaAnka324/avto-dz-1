@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/avto-dz-1/static/css/main.bf3f5605.css",
-    "main.js": "/avto-dz-1/static/js/main.866c8733.js",
+    "main.js": "/avto-dz-1/static/js/main.22dcfd5e.js",
     "static/js/787.66cb4309.chunk.js": "/avto-dz-1/static/js/787.66cb4309.chunk.js",
     "index.html": "/avto-dz-1/index.html",
     "main.bf3f5605.css.map": "/avto-dz-1/static/css/main.bf3f5605.css.map",
-    "main.866c8733.js.map": "/avto-dz-1/static/js/main.866c8733.js.map",
+    "main.22dcfd5e.js.map": "/avto-dz-1/static/js/main.22dcfd5e.js.map",
     "787.66cb4309.chunk.js.map": "/avto-dz-1/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf3f5605.css",
-    "static/js/main.866c8733.js"
+    "static/js/main.22dcfd5e.js"
   ]
 }
