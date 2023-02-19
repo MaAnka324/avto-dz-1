@@ -9,12 +9,13 @@ type GreetingContainerPropsType = {
 
 
 export const pureAddUser = (name: string, setError: (error: string) => void, setName: (name: string) => void, addUserCallback: (name: string) => void) => {
-    if(name.trim()) {
+    if(name.trim() === '') {
         setError('Ошибка! Введите имя!')
     }
-    else {
+    else if(name.trim() !== ''){
         addUserCallback(name)
         setName('')
+        console.log(name)
     }
     // если имя пустое - показать ошибку: setError('Ошибка! Введите имя!'),
     // иначе - добавить юзера при помощи addUserCallback и очистить инпут засетав ''
@@ -22,15 +23,17 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
     // ЕСЛИ НЕ БУДЕТ ПОЛУЧАТЬСЯ, НЕ РАССТРАИВАЙСЯ. НА ЧЕТВЕРТОМ ЗАНЯТИИ ПО ТУДУЛИСТУ НАУЧИМ), НО ВСЕ ТАКИ ПОПЫТАЙСЯ))
 }
 
-export const pureOnBlur = (name: string, setError: (value: string) => void) => { // если имя пустое - показать ошибку
+export const pureOnBlur = (name: string, setError: (error: string) => void) => { // если имя пустое - показать ошибку
     if (name.trim() === '') {
         setError('Ошибка! Введите имя!')
     }
 
 }
 
-export const pureOnEnter = (e: UserType, addUser: (name: string) => void) => { // если нажата кнопка Enter - добавить
-
+export const pureOnEnter = (e: React.KeyboardEvent<HTMLInputElement>, addUser: (name: string) => void) => { // если нажата кнопка Enter - добавить
+    if(e.key  === 'Enter'){
+        addUser("")
+    }
 }
 
 // более простой и понятный для новичков
