@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/avto-dz-1/static/css/main.530875a3.css",
-    "main.js": "/avto-dz-1/static/js/main.17c15b42.js",
+    "main.css": "/avto-dz-1/static/css/main.1aabb87f.css",
+    "main.js": "/avto-dz-1/static/js/main.3440cd65.js",
     "static/js/787.66cb4309.chunk.js": "/avto-dz-1/static/js/787.66cb4309.chunk.js",
     "static/media/checked.svg": "/avto-dz-1/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/avto-dz-1/index.html",
-    "main.530875a3.css.map": "/avto-dz-1/static/css/main.530875a3.css.map",
-    "main.17c15b42.js.map": "/avto-dz-1/static/js/main.17c15b42.js.map",
+    "main.1aabb87f.css.map": "/avto-dz-1/static/css/main.1aabb87f.css.map",
+    "main.3440cd65.js.map": "/avto-dz-1/static/js/main.3440cd65.js.map",
     "787.66cb4309.chunk.js.map": "/avto-dz-1/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.530875a3.css",
-    "static/js/main.17c15b42.js"
+    "static/css/main.1aabb87f.css",
+    "static/js/main.3440cd65.js"
   ]
 }
