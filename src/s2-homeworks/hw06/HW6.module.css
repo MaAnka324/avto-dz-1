@@ -1,5 +1,11 @@
 .buttonsContainer {
+    padding-left: 24px;
 }
 
 .editableSpanContainer {
+    padding: 24px;
+}
+
+s.superButton {
+    padding: 24px;
 }
