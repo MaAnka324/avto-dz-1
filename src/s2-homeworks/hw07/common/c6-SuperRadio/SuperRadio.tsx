@@ -56,7 +56,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                       // http://htmlbook.ru/html/input/name
                       name={name}
                       //checked={o.id === ...может попробовать значение которое тянем из HW7?}
-                      checked={o.id === id }
+
                       onChange={onChangeCallback}
                       {...restProps}
                   />
