@@ -8,9 +8,6 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): any => {
     switch (action.type) {
         case 'sort': { // by name
             // sort() создаёт новый массив? или нужно в ручную?...
-
-
-
             return state
 
             // need to fix
