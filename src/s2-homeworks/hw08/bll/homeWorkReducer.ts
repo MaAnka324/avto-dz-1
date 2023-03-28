@@ -26,7 +26,12 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): any => {
         }
         case 18: {
             // filter() создаёт новый массив? или нужно в ручную?...
-            return state.filter(a => a.age >= 18)
+            let newState =  state.filter(a => a.age >= 18)
+            newState.sort((a, b) => a.age > b.age
+                ? -1
+                : 1
+            )
+            return newState
             // need to fix +
         }
         default:
