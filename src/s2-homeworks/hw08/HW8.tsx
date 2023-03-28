@@ -59,10 +59,11 @@ const HW8 = () => {
             homeWorkReducer(initialPeople, {type: 'check', payload: 18})
         ) // совершеннолетние
         let newState = initialPeople.filter(a => a.age >= 18)
-        newState.sort((a, b) => a.age > b.age
+        newState.sort((a, b) => a.name > b.name
             ? 1
             : -1
         )
+        setPeople(newState)
         setCurrentSort('18')
     }
 
