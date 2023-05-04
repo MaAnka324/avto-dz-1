@@ -7,10 +7,13 @@ import HW9 from '../../hw09/HW9'
 function Junior() {
     return (
         <div id={'hw5-page-junior'}>
-            {/*<HW6 />*/}
-            {/*<HW7 />*/}
+            <HW6 />
+            <hr/>
+            <HW7 />
+            <hr/>
             <HW8 />
-            {/*<HW9 />*/}
+            <hr/>
+            <HW9 />
         </div>
     )
 }

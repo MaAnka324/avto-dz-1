@@ -4,7 +4,7 @@ type ActionType =
     | { type: 'sort'; payload: 'up' | 'down' }
     | { type: 'check'; payload: number }
 
-export const homeWorkReducer = (state: UserType[], action: ActionType): any => { // need to fix any
+export const homeWorkReducer = (state: UserType[], action: ActionType): UserType[] => { // need to fix any
     switch (action.payload) {
         case 'up': { // by name
             // sort() создаёт новый массив? или нужно в ручную?...
@@ -32,7 +32,6 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): any => {
                 : -1
             )
             return newState
-            // need to fix +
         }
         default:
             return state
