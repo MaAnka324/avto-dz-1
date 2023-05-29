@@ -24,7 +24,7 @@ function HW11() {
         // }
         // else  setValue1(+event.currentTarget.value)
 
-        if (isArray(value)) {
+        if (Array.isArray(value)) {
             setValue1(value[0])
             setValue2(value[1])
         } else {
