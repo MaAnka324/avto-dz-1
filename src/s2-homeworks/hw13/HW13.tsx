@@ -24,7 +24,7 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
         setCode('')
         setImage('')
@@ -34,29 +34,23 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
+                console.log(res.request.status)
+                console.log(res.data)
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
                 setInfo(res.data.info)
                 setText(res.data.errorText)
-
             })
             .catch((e) => {
                 // дописать
+                console.log(e)
+                console.log(e.response.status)
+                setCode(e.response.status===400 ? 'Код 400!' : e.response.status===500 ? 'Код 500!' : 'Error')
+                setImage(e.response.status===400 ? error400 : e.response.status===500 ?error500 : errorUnknown)
+                setText(e.response?.data?.errorText||e.message)
+                setInfo(e.response?.data?.info||e.name)
 
-                if(e.response.status) {
-                    console.log(e.name, e.message)
-                    setCode(`Ошибка ${e.response.status}!!`)
-                    setImage(e.response.status === 500 ? error500 : error400)
-                    setInfo(e.response.data.info)
-                    setText(e.response.data.errorText)
-                }
-                else {
-                    setImage(errorUnknown)
-                    setCode('Error')
-                    setInfo(e.name)
-                    setText(e.message)
-                }
             })
     }
 
@@ -70,8 +64,8 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        disabled={info === "...loading"}
                         // дописать
+                        disabled={info === "...loading"}
 
                     >
                         Send true
