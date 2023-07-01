@@ -40,18 +40,16 @@ const HW14 = () => {
                     setLoading(false)
                 }
                 // сохранить пришедшие данные
-
-                //
             })
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
-
+        setLoading(true)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-        setSearchParams(value)
+        setSearchParams({find: value})
         //
     }
 
